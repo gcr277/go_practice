@@ -1,3 +1,3 @@
 package model
 
-var heroName = "cat"
+var HeroName = "cat"
