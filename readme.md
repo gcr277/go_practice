@@ -1,1 +1,1 @@
-version 1.0
+syntax learning

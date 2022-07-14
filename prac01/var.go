@@ -23,6 +23,6 @@ func main() {
 	var  m3 int
 	m3 = m1
 	m3 = m2
-
+	fmt.Println(m3)
 	
 }
