@@ -1,0 +1,6 @@
+1. 如果要编译可执行文件，需要将包名声明为main
+2. 在 $GOPATH 下进行编译，编译main包这个文件夹, 编译路径无需加入 src，编译器自动加入
+3. 编译后默认在 $GOPATH 下生成目标文件，也可以指定路径和文件名，建议将目标文件放在 bin 目录下
+例如：
+[gu@localhost goprojects]$ go build -o bin/prac03.out go_practice/prac03/main
+
