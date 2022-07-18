@@ -32,6 +32,11 @@ func test2(exam1 Test1Type, b int) (ret int){  //3.   4.
 // 3.类型为函数的变量可以作为参数, 也可以作为返回值
 // 4.支持对返回值命名
 // 5.go支持可变数目的参数，可变参数要放在形参列表的末尾
+// func myfunc(num int, args ...type) { 
+// 	for _, arg := range args {
+//         fmt.Println(arg)
+//     }
+// }
 
 var GAfunc = func(n1 int, n2 int)int{ // 全局匿名函数
 	return n1 * n2
