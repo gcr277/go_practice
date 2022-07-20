@@ -25,6 +25,6 @@ func main(){
 	newHero["name"] = "lulu"
 	newHero["job"] = "SUP"
 	heroSli = append(heroSli, newHero)
-	// 千万注意不要越出slice的cap，所以使用append动态地向slice里增加map
+	// 千万注意不要越出slice的len，所以使用append动态地向slice里增加map
 	fmt.Printf("%v\n", heroSli)
 }
