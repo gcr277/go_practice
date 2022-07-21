@@ -35,4 +35,4 @@ func main() {
 // 5.switch后面可以不带表达式类似if-else分支来使用
 // 6.switch后面可以接赋值表达式再加分号，然后按照5的方式使用（不推荐）
 // 7.如果在case语句块后面增加fallthrough，则会继续执行下面的case（switch穿透）
-// 8.switch还可用于type-switch来判断某个interface变量中实际指向的变量类型
+// 8.switch还可用于interface1.(type)来判断某个interface1变量中实际指向的变量类型

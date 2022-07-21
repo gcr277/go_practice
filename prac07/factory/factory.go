@@ -1,4 +1,4 @@
-package testPackage
+package factory
 
 import(
 
@@ -16,11 +16,18 @@ func NewStudent(n string, a int) *student{
 	}
 }
 
-func (studentP *student)SetStudentInfo(name string, age int){
+func (studentP *student)SetName(name string){
 	(*studentP).name = name
-	(*studentP).age = age
+	return
 }
 
-func (studentP *student)GetStudentInfo() (string, int){
-	return (*studentP).name, (*studentP).age
+func (studentP *student)SetAge(age int){
+	(*studentP).age = age
+	return
+}
+func (studentP *student)GetName() string{
+	return (*studentP).name
+}
+func (studentP *student)GetAge() int{
+	return (*studentP).age
 }
