@@ -32,7 +32,7 @@ func main(){
 	// 2.使用内置make函数，容量可选
 	var sli4 []int = make([]int, 2, 4)
 	fmt.Printf("%v\n", sli4)
-	// 3.定义切片时直接指定数组, 类似1与2的结合
+	// 3.定义切片时直接指定元素，本质上指定了一个初始化了这些元素的数组
 	var sli5 []int = []int{10, 20, 30, 40, 50}
 	fmt.Printf("%v, %v, %v\n", sli5, len(sli5), cap(sli5))
 	fmt.Println()

@@ -52,8 +52,8 @@ func main(){
 	camera1 := Camera{Model : "SONY"}
 
 	ComputerWorking(&phone1)
-	ComputerWorking(camera1)
-	ComputerWorking(&camera1)
+	ComputerWorking(camera1) // 由值类型实现，猜测会自动转为指针，因此两种写法都可以
+	ComputerWorking(&camera1) // 
 	fmt.Println("////////////////////////////////")
 	var u1 USB = &phone1  // 由指针类型实现，则只能赋相应的指针
 	u1.Start()
