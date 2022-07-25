@@ -13,14 +13,14 @@ import(
 // JSON键值对是用来保存数据的一种方式
 // {"name":"tom", "age":18, "hobby":["music","chess"]}
 
-type Student struct{
+type student struct{
 	Name string 	`json:"name"`  // 为了让大写的字段序列化后得到小写的字段，可以使用tag，原理是反射
 	Age int			`json:"age"`
 	Score float64	`json:"score"`
 }
 
 func StructSerialize(){
-	student1 := Student{
+	student1 := student{
 		Name : "tom",
 		Age : 18,
 		Score : 90.0,

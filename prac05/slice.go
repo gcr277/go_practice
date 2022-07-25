@@ -23,7 +23,7 @@ func main(){
 	fmt.Printf("%p\n", sli2)		// 切片指向的首个元素地址
 	fmt.Println()
 	
-	// slice的内存布局: first element pointer | len | cap
+	// slice本质是结构体，内存布局: first element pointer | len | cap
 	
 	// slice的三种定义方式
 	// 1.对已有数组或切片进行引用

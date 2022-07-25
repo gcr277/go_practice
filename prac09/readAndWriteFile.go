@@ -21,7 +21,7 @@ func main(){
 	inputFilePath := "./input"
 	inputFileExist, _ := PathExist(inputFilePath)
 	outputFilePath := "./output"  // 不存在则自动创建
-	data, err := os.ReadFile(inputFilePath)
+	data, err := os.ReadFile(inputFilePath) // io/ioutil.ReadFile 调用的这个
 	if (!inputFileExist) || (err != nil){
 		fmt.Printf("read file error---%v\n", err)
 		return

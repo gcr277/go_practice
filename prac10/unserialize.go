@@ -5,13 +5,13 @@ import(
 	"encoding/json"
 )
 
-type Student struct{
+type student struct{
 	Name string 	`json:"name"`  // 为了让大写的字段序列化后得到小写的字段，可以使用tag，原理是反射
 	Age int			`json:"age"`
 	Score float64	`json:"score"`
 }
 
-func StructSerialize(studentPtr *Student)([]byte, error){
+func StructSerialize(studentPtr *student)([]byte, error){
 	
 	data,err := json.Marshal(studentPtr)
 	if err != nil{
@@ -19,8 +19,8 @@ func StructSerialize(studentPtr *Student)([]byte, error){
 	}
 	return data, err
 }
-func StructUnserialize(data []byte)(*Student, error){
-	var student2 Student
+func StructUnserialize(data []byte)(*student, error){
+	var student2 student
 	err := json.Unmarshal(data, &student2)
 	if err != nil{
 		return nil, err
@@ -45,7 +45,7 @@ func MapUnserialize(data []byte)(map[string]interface{}, error){
 }
 
 func main(){
-	student1 := Student{
+	student1 := student{
 		Name : "tom",
 		Age : 18,
 		Score : 90.0,

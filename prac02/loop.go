@@ -22,5 +22,11 @@ func main(){
 	// 可以用break退出循环
 	// 死循环的写法：
 	// for{}
+
+	for j := 0; j<50; j++{
+		var i int   // 每一次循环的i都是独立的
+		i++
+		fmt.Println(i)
+	}
 }
 

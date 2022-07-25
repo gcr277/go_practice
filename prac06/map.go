@@ -27,7 +27,7 @@ func main(){
 	fmt.Println()
 
 	// 增删改查
-	m1[5] = "fff" // key存在则为更新，key不存在则为增加
+	m1[5] = "fff" // key存在则为更新，key不存在则为增加，自动扩容
 	fmt.Printf("m1 : %v len = %v\n", m1, len(m1))
 
 	delete(m1, 1) // key存在则删除
