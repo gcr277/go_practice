@@ -8,6 +8,7 @@ import (
 )
 const IntNUM int = 8000
 
+
 func putInt(intChan chan<- int){
 	for i := 1; i <= IntNUM; i++{
 		intChan <- i
