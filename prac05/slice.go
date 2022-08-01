@@ -7,7 +7,7 @@ func main(){
 	var intArr [5]int = [...]int{1,2,3,4,5}
 	var sli []int = intArr[1:3]
 	sli2 := sli
-	// 定义一个切片，范围是intArr下标1～3但包含3，切片使用同样不可以越界
+	// 定义一个切片，范围是intArr下标1～3但不包含3，切片使用同样不可以越界
 
 	fmt.Printf("%p\n", &intArr[1])
 	fmt.Printf("%p\n", &sli[0])		
