@@ -7,6 +7,7 @@ import (
 )
 
 // 执行顺序：被引包的全局变量->被引包的init函数->本文件全局变量定义->本文件init函数->main
+// 同一个包多次被引用时，其init函数也只执行一次（在第一次被引时）
 var A int = testGlobal()
 func testGlobal() int {
 	fmt.Println("Global var defination")

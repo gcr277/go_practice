@@ -47,7 +47,7 @@ func main(){
 	var str6 string = ""
 	str6 = strconv.FormatInt(int64(num1), 10) //变量，进制
 	fmt.Println(str6)
-	str6 = strconv.FormatFloat(num2, 'f', 10, 64) //变量，格式，保留位数，float64
+	str6 = strconv.FormatFloat(num2, 'f', 10, 64) //变量，格式，保留位数，保证多少位不溢出
 	fmt.Println(str6)
 	str6 = strconv.FormatBool(b1)
 	fmt.Println(str6)

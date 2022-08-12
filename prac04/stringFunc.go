@@ -33,6 +33,6 @@ func main(){
 // strings.ToLower(str)
 // strings.ToUpper(str)
 // strings.TrimSpace(str)
-// strings.Trim(¡¡¡Hello, Gophers!!!", "!¡)	// 去掉开头和结尾的字符集内的字符
+// strings.Trim("¡¡¡Hello, Gophers!!!", "!¡")	// 去掉开头和结尾的字符集内的字符
 // strings.HasPrefix("abc.jpg", "abc")
 // strings.HasSuffix("abc.jpg", "jpg")
